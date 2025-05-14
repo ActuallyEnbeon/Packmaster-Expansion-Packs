@@ -1,4 +1,4 @@
-package thePackmaster.powers.cosmoscommandpack;
+package thePackmaster.powers.cosmoscommandpack.deprecated;
 
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;

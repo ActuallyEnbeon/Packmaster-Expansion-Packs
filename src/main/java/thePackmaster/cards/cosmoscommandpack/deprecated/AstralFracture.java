@@ -1,5 +1,6 @@
-package thePackmaster.cards.cosmoscommandpack;
+package thePackmaster.cards.cosmoscommandpack.deprecated;
 
+import basemod.patches.com.megacrit.cardcrawl.screens.compendium.CardLibraryScreen.NoCompendium;
 import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -9,6 +10,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.ShockWaveEffect;
 import thePackmaster.actions.highenergypack.AllEnemyApplyPowerAction;
+import thePackmaster.cards.cosmoscommandpack.AbstractCosmosCard;
 import thePackmaster.cards.marisapack.AmplifyCard;
 import thePackmaster.powers.distortionpack.DistortionPower;
 
@@ -16,6 +18,7 @@ import static thePackmaster.SpireAnniversary5Mod.makeID;
 import static thePackmaster.util.Wiz.atb;
 import static thePackmaster.util.Wiz.vfx;
 
+@NoCompendium
 public class AstralFracture extends AbstractCosmosCard implements AmplifyCard {
     public final static String ID = makeID("AstralFracture");
 

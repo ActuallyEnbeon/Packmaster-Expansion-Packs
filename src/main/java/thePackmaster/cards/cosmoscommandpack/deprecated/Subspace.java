@@ -1,5 +1,6 @@
-package thePackmaster.cards.cosmoscommandpack;
+package thePackmaster.cards.cosmoscommandpack.deprecated;
 
+import basemod.patches.com.megacrit.cardcrawl.screens.compendium.CardLibraryScreen.NoCompendium;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -7,12 +8,14 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.FlashPowerEffect;
+import thePackmaster.cards.cosmoscommandpack.AbstractCosmosCard;
 import thePackmaster.powers.distortionpack.DistortionPower;
 import thePackmaster.util.Wiz;
 
 import static thePackmaster.SpireAnniversary5Mod.makeID;
 import static thePackmaster.util.Wiz.getEnemies;
 
+@NoCompendium
 public class Subspace extends AbstractCosmosCard {
     public final static String ID = makeID("Subspace");
 

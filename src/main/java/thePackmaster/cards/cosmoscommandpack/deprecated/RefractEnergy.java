@@ -1,4 +1,4 @@
-package thePackmaster.cards.cosmoscommandpack;
+package thePackmaster.cards.cosmoscommandpack.deprecated;
 
 import com.evacipated.cardcrawl.mod.stslib.damagemods.BindingHelper;
 import com.evacipated.cardcrawl.mod.stslib.damagemods.DamageModifierManager;
@@ -9,12 +9,14 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.MindblastEffect;
 import thePackmaster.cardmodifiers.cosmoscommand.DistortionApplicationPostDamageModifier;
+import thePackmaster.cards.cosmoscommandpack.AbstractCosmosCard;
 import thePackmaster.cards.marisapack.AmplifyCard;
 import thePackmaster.util.Wiz;
 
 import static thePackmaster.SpireAnniversary5Mod.makeID;
 import static thePackmaster.util.Wiz.vfx;
 
+// TODO: rework
 public class RefractEnergy extends AbstractCosmosCard implements AmplifyCard {
     public final static String ID = makeID("RefractEnergy");
 

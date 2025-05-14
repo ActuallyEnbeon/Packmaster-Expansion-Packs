@@ -1,4 +1,4 @@
-package thePackmaster.actions.cosmoscommandpack;
+package thePackmaster.actions.cosmoscommandpack.deprecated;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;

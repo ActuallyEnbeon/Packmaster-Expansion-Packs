@@ -1,17 +1,20 @@
-package thePackmaster.cards.cosmoscommandpack;
+package thePackmaster.cards.cosmoscommandpack.deprecated;
 
+import basemod.patches.com.megacrit.cardcrawl.screens.compendium.CardLibraryScreen.NoCompendium;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import thePackmaster.actions.upgradespack.SuperUpgradeAction;
+import thePackmaster.cards.cosmoscommandpack.AbstractCosmosCard;
 
 import java.util.ArrayList;
 
 import static thePackmaster.SpireAnniversary5Mod.makeID;
 import static thePackmaster.util.Wiz.atb;
 
+@NoCompendium
 public class EternalStrike extends AbstractCosmosCard {
     public final static String ID = makeID("EternalStrike");
 
