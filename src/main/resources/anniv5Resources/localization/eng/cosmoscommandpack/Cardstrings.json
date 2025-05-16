@@ -1,4 +1,16 @@
 {
+  "${ModID}:Cognition": {
+    "NAME": "Cognition",
+    "DESCRIPTION": "Draw !${ModID}:m2! cards. NL ${ModID}:Amplify [E] : Scry !M! before drawing."
+  },
+  "${ModID}:UltimaBlast": {
+    "NAME": "Ultima Blast",
+    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Amplify [E] : NL Deals double damage. NL ${ModID}:Amplify [E] : NL Apply !M! ${ModID}:Ignite."
+  },
+
+
+
+
   "${ModID}:ArcingEnergy": {
     "NAME": "Arcing Energy",
     "DESCRIPTION": "The first time a card is ${ModID}:Amplified each turn, gain [E] ."
@@ -6,10 +18,6 @@
   "${ModID}:AstralFracture": {
     "NAME": "Astral Fracture",
     "DESCRIPTION": "Apply !M! ${ModID}:Distortion to ALL enemies. NL ${ModID}:Amplify [E] : Exhaust a copy of this card."
-  },
-  "${ModID}:Cognition": {
-    "NAME": "Cognition",
-    "DESCRIPTION": "Draw !${ModID}:m2! cards. NL ${ModID}:Amplify [E] : Scry !M! before drawing."
   },
   "${ModID}:EternalStrike": {
     "NAME": "Eternal Flame",
