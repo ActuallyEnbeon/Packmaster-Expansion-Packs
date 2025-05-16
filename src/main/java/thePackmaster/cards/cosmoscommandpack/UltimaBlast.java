@@ -14,9 +14,6 @@ import static thePackmaster.SpireAnniversary5Mod.makeID;
 public class UltimaBlast extends AbstractCosmosCard implements AmplifyCard {
     public final static String ID = makeID("UltimaBlast");
 
-    private int currentAmplifyCost = 2;
-    private boolean costCheckInProgress = false;
-
     public UltimaBlast() {
         super(ID, 1, CardType.ATTACK, CardRarity.RARE, CardTarget.ENEMY);
         baseDamage = 13;
@@ -30,18 +27,25 @@ public class UltimaBlast extends AbstractCosmosCard implements AmplifyCard {
 
     @Override
     public boolean skipUseOnAmplify() {
-        return (currentAmplifyCost >= 2);
+        return true;
     }
 
     @Override
     public void useAmplified(AbstractPlayer p, AbstractMonster m) {
-        if (currentAmplifyCost < 2) return;
         if (m.hb != null) {
             Wiz.vfx(new WeightyImpactEffect(m.hb.cX, m.hb.cY));
             addToBot(new WaitAction(0.8F));
         }
         dmg(m, AbstractGameAction.AttackEffect.FIRE);
-        Wiz.applyToEnemy(m, new IgnitePower(m, magicNumber));
+        if (getAmplifyCost() >= 2) {
+            Wiz.applyToEnemy(m, new IgnitePower(m, magicNumber));
+        }
+    }
+
+    @Override
+    public int getAmplifyCost() {
+        if (shouldAmplify(this, 2)) return 2;
+        return 1;
     }
 
     @Override
@@ -53,7 +57,7 @@ public class UltimaBlast extends AbstractCosmosCard implements AmplifyCard {
     @Override
     public void applyPowers() {
         int realBaseDamage = baseDamage;
-        if (shouldAmplify(this) && currentAmplifyCost >= 1) {
+        if (shouldAmplify(this, 1)) {
             baseDamage *= 2;
         }
         super.applyPowers();
@@ -64,7 +68,7 @@ public class UltimaBlast extends AbstractCosmosCard implements AmplifyCard {
     @Override
     public void calculateCardDamage(AbstractMonster mo) {
         int realBaseDamage = baseDamage;
-        if (shouldAmplify(this) && currentAmplifyCost >= 1) {
+        if (shouldAmplify(this, 1)) {
             baseDamage *= 2;
         }
         super.calculateCardDamage(mo);
@@ -72,18 +76,8 @@ public class UltimaBlast extends AbstractCosmosCard implements AmplifyCard {
         isDamageModified = (damage != baseDamage);
     }
 
-    // This code handles having 2 separate Amplify costs (+1 and +2)
     @Override
-    public int getAmplifyCost() {
-        if (costCheckInProgress) {
-            return currentAmplifyCost;
-        }
-        costCheckInProgress = true;
-        currentAmplifyCost = 2;
-        if (!shouldAmplify(this)) {
-            currentAmplifyCost = 1;
-        }
-        costCheckInProgress = false;
-        return currentAmplifyCost;
+    public void triggerOnGlowCheck() {
+        glowColor = (getAmplifyCost() >= 2) ? GOLD_BORDER_GLOW_COLOR : BLUE_BORDER_GLOW_COLOR;
     }
 }
