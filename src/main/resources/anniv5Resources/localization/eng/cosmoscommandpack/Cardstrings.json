@@ -1,4 +1,12 @@
 {
+  "${ModID}:ArcingEnergy": {
+    "NAME": "Arcing Energy",
+    "DESCRIPTION": "The first time a card is ${ModID}:Amplified each turn, gain [E] ."
+  },
+  "${ModID}:HeatEngine": {
+    "NAME": "Coalesce",
+    "DESCRIPTION": "Whenever you spend 2 or more [E] on a card, gain !M! Strength."
+  },
   "${ModID}:Cognition": {
     "NAME": "Cognition",
     "DESCRIPTION": "Draw !${ModID}:m2! cards. NL ${ModID}:Amplify [E] : Scry !M! before drawing."
@@ -11,10 +19,6 @@
 
 
 
-  "${ModID}:ArcingEnergy": {
-    "NAME": "Arcing Energy",
-    "DESCRIPTION": "The first time a card is ${ModID}:Amplified each turn, gain [E] ."
-  },
   "${ModID}:AstralFracture": {
     "NAME": "Astral Fracture",
     "DESCRIPTION": "Apply !M! ${ModID}:Distortion to ALL enemies. NL ${ModID}:Amplify [E] : Exhaust a copy of this card."
@@ -26,10 +30,6 @@
   "${ModID}:FalseGrit": {
     "NAME": "False Grit",
     "DESCRIPTION": "Exhaust !M! cards. NL Gain !B! Block for each card Exhausted. NL ${ModID}:Amplify [E] : Exhaust !M! more cards."
-  },
-  "${ModID}:HeatEngine": {
-    "NAME": "Heat Engine",
-    "DESCRIPTION": "Whenever you play a card with a cost of 2 or greater, including ${ModID}:Amplify, gain !M! Strength."
   },
   "${ModID}:RefractEnergy": {
     "NAME": "Refract Energy",

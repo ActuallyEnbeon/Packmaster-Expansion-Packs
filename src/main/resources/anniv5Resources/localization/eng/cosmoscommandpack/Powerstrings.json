@@ -1,9 +1,9 @@
 {
   "${ModID}:HeatEnginePower": {
-    "NAME": "Heat Engine",
+    "NAME": "Coalesce",
     "DESCRIPTIONS": [
-      "Whenever you play a card with a cost of #b",
-      " or greater, including #yAmplify, gain #b",
+      "Whenever you spend #b",
+      " or more [E] on a card, gain #b",
       " #yStrength."
       ]
   },

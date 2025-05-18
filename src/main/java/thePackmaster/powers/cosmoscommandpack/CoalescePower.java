@@ -1,4 +1,4 @@
-package thePackmaster.powers.cosmoscommandpack.deprecated;
+package thePackmaster.powers.cosmoscommandpack;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
@@ -10,21 +10,20 @@ import thePackmaster.cards.marisapack.AmplifyCard;
 import thePackmaster.powers.AbstractPackmasterPower;
 
 import static thePackmaster.SpireAnniversary5Mod.makeID;
-import static thePackmaster.util.Wiz.atb;
-import static thePackmaster.util.Wiz.getLogicalCardCost;
+import static thePackmaster.util.Wiz.*;
 
-public class HeatEnginePower extends AbstractPackmasterPower {
+public class CoalescePower extends AbstractPackmasterPower {
     public static final String POWER_ID = makeID("HeatEnginePower");
     public static final String NAME = CardCrawlGame.languagePack.getPowerStrings(POWER_ID).NAME;
     public static final String[] DESCRIPTIONS = CardCrawlGame.languagePack.getPowerStrings(POWER_ID).DESCRIPTIONS;
 
-    public HeatEnginePower(AbstractCreature owner, int amount) {
+    public CoalescePower(AbstractCreature owner, int amount) {
         super(POWER_ID, NAME, PowerType.BUFF, false, owner, amount);
     }
 
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (getLogicalCardCost(card) >= 2 || (card instanceof AmplifyCard && getLogicalCardCost(card) + ((AmplifyCard) card).getAmplifyCost() >= 2)) {
+        if (getLogicalCardCostPlusAmplify(card) >= 2) {
             this.flash();
             atb(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, this.amount), this.amount));
         }

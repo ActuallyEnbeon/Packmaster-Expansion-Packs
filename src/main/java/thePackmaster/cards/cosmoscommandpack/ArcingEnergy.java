@@ -1,10 +1,9 @@
-package thePackmaster.cards.cosmoscommandpack.deprecated;
+package thePackmaster.cards.cosmoscommandpack;
 
 import basemod.patches.com.megacrit.cardcrawl.screens.compendium.CardLibraryScreen.NoCompendium;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import thePackmaster.cards.cosmoscommandpack.AbstractCosmosCard;
-import thePackmaster.powers.cosmoscommandpack.deprecated.ArcingEnergyPower;
+import thePackmaster.powers.cosmoscommandpack.ArcingEnergyPower;
 
 import static thePackmaster.SpireAnniversary5Mod.makeID;
 import static thePackmaster.util.Wiz.applyToSelf;
