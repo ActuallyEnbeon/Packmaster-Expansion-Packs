@@ -11,9 +11,17 @@
     "NAME": "Cognition",
     "DESCRIPTION": "Draw !${ModID}:m2! cards. NL ${ModID}:Amplify [E] : Scry !M! before drawing."
   },
+  "${ModID}:EternalStrike": {
+    "NAME": "Eternal Flame",
+    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Amplify [E] [E] : Return this card to your hand and increase its damage by !M!."
+  },
   "${ModID}:ReflexiveDodge": {
     "NAME": "Reflexive Dodge",
     "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Amplify [E] : NL Draw !M! cards."
+  },
+  "${ModID}:RefractEnergy": {
+    "NAME": "Refract Energy",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Deals !M! additional damage if you've ${ModID}:Amplified this turn."
   },
   "${ModID}:StaticShock": {
     "NAME": "Static Shock",
@@ -35,17 +43,9 @@
     "NAME": "Astral Fracture",
     "DESCRIPTION": "Apply !M! ${ModID}:Distortion to ALL enemies. NL ${ModID}:Amplify [E] : Exhaust a copy of this card."
   },
-  "${ModID}:EternalStrike": {
-    "NAME": "Eternal Flame",
-    "DESCRIPTION": "Deal !D! damage. NL If this card is Exhausted, add a copy of it to your hand with !M! more damage."
-  },
   "${ModID}:FalseGrit": {
     "NAME": "False Grit",
     "DESCRIPTION": "Exhaust !M! cards. NL Gain !B! Block for each card Exhausted. NL ${ModID}:Amplify [E] : Exhaust !M! more cards."
-  },
-  "${ModID}:RefractEnergy": {
-    "NAME": "Refract Energy",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL ${ModID}:Amplify [E] : Apply ${ModID}:Distortion equal to half of unblocked damage."
   },
   "${ModID}:RopeTrick": {
     "NAME": "Rope Trick",
