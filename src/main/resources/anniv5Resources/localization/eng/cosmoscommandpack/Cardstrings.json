@@ -11,9 +11,21 @@
     "NAME": "Cognition",
     "DESCRIPTION": "Draw !${ModID}:m2! cards. NL ${ModID}:Amplify [E] : Scry !M! before drawing."
   },
+  "${ModID}:ReflexiveDodge": {
+    "NAME": "Reflexive Dodge",
+    "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Amplify [E] : NL Draw !M! cards."
+  },
+  "${ModID}:StaticShock": {
+    "NAME": "Static Shock",
+    "DESCRIPTION": "{@@}Deal !D! damage. NL Gain {!M!|repeat=[E] }. NL Exhaust."
+  },
   "${ModID}:UltimaBlast": {
     "NAME": "Ultima Blast",
     "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Amplify [E] : NL Deals double damage. NL ${ModID}:Amplify [E] : NL Apply !M! ${ModID}:Ignite."
+  },
+  "${ModID}:WallOfSparks": {
+    "NAME": "Wall of Sparks",
+    "DESCRIPTION": "Gain !B! Block. NL The next ${ModID}:Amplify effect is free."
   },
 
 
