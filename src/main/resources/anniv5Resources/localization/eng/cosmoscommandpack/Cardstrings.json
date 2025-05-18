@@ -23,6 +23,10 @@
     "NAME": "Refract Energy",
     "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Deals !M! additional damage if you've ${ModID}:Amplified this turn."
   },
+  "${ModID}:Starburst": {
+    "NAME": "Starburst",
+    "DESCRIPTION": "Apply !M! Weak and Vulnerable to ALL enemies. NL ${ModID}:Amplify [E] [E] : Apply !${ModID}:m2! of each instead."
+  },
   "${ModID}:StaticShock": {
     "NAME": "Static Shock",
     "DESCRIPTION": "{@@}Deal !D! damage. NL Gain {!M!|repeat=[E] }. NL Exhaust."

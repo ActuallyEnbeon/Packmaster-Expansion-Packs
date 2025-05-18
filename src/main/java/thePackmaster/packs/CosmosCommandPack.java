@@ -22,20 +22,17 @@ public class CosmosCommandPack extends AbstractCardPack {
 
     @Override
     public ArrayList<String> getCards() {
-        // TODO: remove old cards and add new cards
         ArrayList<String> cards = new ArrayList<>();
-        cards.add(ArcingEnergy.ID);
+        cards.add(EternalFlame.ID);
+        cards.add(ReflexiveDodge.ID);
+        cards.add(StaticShock.ID);
         cards.add(Coalesce.ID);
         cards.add(Cognition.ID);
-        cards.add(EternalFlame.ID);
         cards.add(RefractEnergy.ID);
-        // begin old cards
-        cards.add(AstralFracture.ID);
-        cards.add(FalseGrit.ID);
-        cards.add(RopeTrick.ID);
-        cards.add(Subspace.ID);
-        cards.add(SubtleKnife.ID);
-        // end old cards
+        cards.add(WallOfSparks.ID);
+        cards.add(ArcingEnergy.ID);
+        cards.add(Starburst.ID);
+        cards.add(UltimaBlast.ID);
         return cards;
     }
 }
